@@ -34,7 +34,7 @@ public class Frame extends JFrame implements ActionListener, KeyListener
 	
 	public Frame()
 	{
-		this.setLayout(new BorderLayout());
+	this.setLayout(new BorderLayout());
     this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
     SCREEN_WIDTH=720;
     SCREEN_HEIGHT=400;
@@ -116,11 +116,11 @@ public class Frame extends JFrame implements ActionListener, KeyListener
 		if(ended)
 		{
 			if(WPM<=40)
-				message="You can become Content Writer and Blog Writer but not Data Entry Operator or Programmer";
-			else if(WPM>40 && WPM<=50)
-				message="You can become Content Writer, Blog Writer, Copywriter and Data Entry Operator but not Programmer";
-			else if(WPM>=60 && WPM<=100)
-				message="You can become Content Writer, Blog Writer, Copywriter, Data Entry Operator as well as Programmer";
+				message="You are an Average Typist";
+			else if(WPM>40 && WPM<=60)
+				message="You are a Good Typist";
+			else if(WPM>60 && WPM<=100)
+				message="You are an Excellent Typist";
 			else
 				message="You are an Elite Typist";
 			
